@@ -36,7 +36,7 @@ export default function App() {
       {/* {errors.map((error) => (
         <p key={error}>Error: {error}</p>
       ))} */}
-      <form onSubmit={handleSubmit((data) => console.log(data))}>
+      <form onSubmit={handleSubmit((data) => setValues(data))}>
         <p>nhập email:</p>
         <input
           {...register('email', {
